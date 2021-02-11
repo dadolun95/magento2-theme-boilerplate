@@ -1,0 +1,25 @@
+{
+  "name": "dadolun-theme",
+  "version": "0.0.1",
+  "authors": [
+    "Davide Lunardon <dadolun@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "web/bower_components",
+    "test",
+    "tests",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery-sticky": "^1.0.4",
+    "jcf": "^1.2.3"
+  },
+  "scripts": {
+      "postinstall": "bash ./copy-assets.sh"
+  },
+  "description": "dadolun magento2 blank theme",
+  "main": "bower.json",
+  "license": "MIT"
+}

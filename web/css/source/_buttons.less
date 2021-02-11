@@ -1,0 +1,38 @@
+//
+//  Dadolun theme buttons
+//  _____________________________________________
+
+
+.lib-button-primary {
+    .lib-css(background, @dadolun-primary-color);
+    .lib-css(border-radius, @button-border-radius);
+    .lib-css(color, @color-white);
+    .lib-css(border-color, @dadolun-primary-color);
+    .lib-css(padding, @button-primary__padding);
+    .base-font();
+
+    span {
+        .base-font();
+    }
+
+    &:hover {
+        .lib-css(background, @dadolun-primary-color);
+        .lib-css(border-color, @dadolun-primary-color);
+    }
+
+    &:focus,
+    &:active {
+        .lib-css(background, @dadolun-primary-color);
+    }
+}
+
+& when (@media-common = true) {
+
+    a.action.primary {
+        .lib-link-as-button();
+    }
+
+    .action.primary {
+        .lib-button-primary();
+    }
+}

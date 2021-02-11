@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Footer -->
+        <referenceBlock name="report.bugs" remove="true"/>
+
+        <move element="store.menu" destination="header.container" after="-"/>
+
+        <referenceContainer name="before.body.end">
+            <block name="jcf-init" template="Magento_Ui::html/init-jcf.phtml" />
+            <block name="sticky-header" template="Magento_Theme::header/init-sticky-header.phtml" />
+        </referenceContainer>
+
+    </body>
+</page>

@@ -1,0 +1,6 @@
+{
+  "cwd": "./",
+   "scripts": {
+        "postinstall": "bash ./copy-assets.sh"
+   }
+ }

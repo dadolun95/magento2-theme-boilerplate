@@ -1,0 +1,24 @@
+& when (@media-common = true) {
+    body {
+        .page-wrapper {
+            .page-header {
+                background: @color-white;
+                nav {
+                    &.navigation {
+                        max-width: 100%;
+                        > ul {
+                            max-width: 1280px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                }
+            }
+            .sticky-wrapper {
+                .page-header {
+                    z-index: 100 !important;
+                }
+            }
+        }
+    }
+}
